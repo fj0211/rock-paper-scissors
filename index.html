@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Rock, Paper, Scissors!</title>
+</head>
+
+<body class="text-center">
+  <div class="content">
+    <section class="game">
+      <div class="title">Rock, Paper, Scissors!</div>
+      <div class="score">
+        <div class="playerScore">
+          <h2>Player</h2>
+          <p class="p-count count">0</p>
+
+        </div>
+        <div class="computerScore">
+          <h2>Computer</h2>
+          <p class="c-count count">0</p>
+        </div>
+      </div>
+      <!-- Choose your move -->
+      <div class="move">Choose your move</div>
+      <br>
+      <div class="options">
+
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <button onClick="userChoice(0)" class="btndecor1"><img src='https://cdn.cnn.com/cnnnext/dam/assets/220331104903-chris-rock-okok.jpg'>Rock</img></button>
+            </div>
+            <div class="col-sm">
+              <button onClick="userChoice(1)" class="paper btndecor2"><img src='https://static01.nyt.com/images/2020/03/12/opinion/op-panic-buying/op-panic-buying-superJumbo.png'>Paper</img></button>
+            </div>
+            <div class="col-sm">
+              <button onClick="userChoice(2)" class=" btndecor3"><img src='https://i.ebayimg.com/images/g/wzsAAOSwL5ZfaO~7/s-l400.jpg'>Scissors</img></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- the result of the round -->
+      Your choice: <span class="userChoice"></span>
+      <br>
+      A.I.: <span class="computerChoice"></span>
+      <div class="results"></div>
+      <img class="youwon">
+      <br>
+      <!-- button resets the game -->
+      <button onClick="resetGame()" class="reset">Reset</button>
+
+    </section>
+    <br>
+    <hr>
+    <br>
+    <footer>
+      Made by the incredibly presitigious Fernando Davila
+    </footer>
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
