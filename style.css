@@ -1,0 +1,71 @@
+img {
+  width: 200px;
+  height: 200px;
+}
+br {
+  color:black;
+}
+HTML {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  background-color: maroon;
+}
+.unitext {
+  font-size: 34px;
+}
+.btndecor1 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+}
+.btndecor2 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+}
+.btndecor3 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+}
+/* Design of button provided by W3 Schools */
+.btndecor:hover {
+  background-color: #3e8e41
+}
+
+.btndecor:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.resetgame {
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+  height: 45px;
+  width: 95px;
+
+}
