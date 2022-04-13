@@ -5,12 +5,11 @@ let cScoreboard = document.querySelector('.c-count');
 let roundResult = document.querySelector('.result');
 let computerChoiceSpan = document.querySelector('.computerChoice');
 let userChoiceSpan = document.querySelector('.userChoice');
-let winnerPannel = document.querySelector('.winner');
+let winnerPannel = document.querySelector('.youwon');
 
 //setting score variables for player & computer to track score
 let playerScore = 0;
 let computerScore = 0;
-//intializing Global variables to store user and computer selections
 let computerChoice;
 let playerChoice;
 const gameOptions = ["rock", "paper", "scissor"];
@@ -32,7 +31,7 @@ function userChoice(choice) {
 function game(playerChoice, computerChoice) {
     if (playerChoice == computerChoice) {
         won("tie");
-        return;  // nothing more to check when it's a tie
+        return;
     }
 
     if (playerChoice == "rock" && computerChoice == "paper")
@@ -51,14 +50,14 @@ function game(playerChoice, computerChoice) {
         alert("Wrong inputs")
 }
 
-function won(winner) {
-    if (winner == "player") {
+function won(youwon) {
+    if (youwon == "player") {
         roundResult.innerHTML = "wow you beat a computer holy you're insane";
         playerScore = playerScore + 1;
         pScoreboard.innerHTML = playerScore;
         winnerPannel.src = "https://rockymountevents.com/wp-content/uploads/2018/09/birthday_celebration.jpg";
     }
-    else if (winner == "computer") {
+    else if (youwon == "computer") {
         roundResult.innerHTML = "you suck, better luck next time";
         computerScore = computerScore + 1;
         cScoreboard.innerHTML = computerScore;

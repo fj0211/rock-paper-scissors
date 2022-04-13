@@ -7,17 +7,23 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Rock, Paper, Scissors!</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
   <div class="content">
     <section class="game">
       <div class="title">Rock, Paper, Scissors!</div>
+      <!-- To keep score -->
       <div class="score">
         <div class="playerScore">
           <h2>Player</h2>
           <p class="p-count count">0</p>
-
         </div>
         <div class="computerScore">
           <h2>Computer</h2>
@@ -28,20 +34,16 @@
       <div class="move">Choose your move</div>
       <br>
       <div class="options">
-
-
-
-
         <div class="container">
           <div class="row">
             <div class="col-sm">
-              <button onClick="userChoice(0)" class="btndecor1"><img src='https://cdn.cnn.com/cnnnext/dam/assets/220331104903-chris-rock-okok.jpg'>Rock</img></button>
+              <button onClick="userChoice(0)" class="rock btndecor1"><img src='https://cdn.cnn.com/cnnnext/dam/assets/220331104903-chris-rock-okok.jpg'>Rock</img></button>
             </div>
             <div class="col-sm">
               <button onClick="userChoice(1)" class="paper btndecor2"><img src='https://static01.nyt.com/images/2020/03/12/opinion/op-panic-buying/op-panic-buying-superJumbo.png'>Paper</img></button>
             </div>
             <div class="col-sm">
-              <button onClick="userChoice(2)" class=" btndecor3"><img src='https://i.ebayimg.com/images/g/wzsAAOSwL5ZfaO~7/s-l400.jpg'>Scissors</img></button>
+              <button onClick="userChoice(2)" class="scissors btndecor3"><img src='https://i.ebayimg.com/images/g/wzsAAOSwL5ZfaO~7/s-l400.jpg'>Scissors</img></button>
             </div>
           </div>
         </div>
